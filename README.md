@@ -5,7 +5,7 @@ Project main features:
 4. If you click on a packet, it will show you detailed view for HTTP or TCP protocols at least. For
 the another protocols it will be bonus
 5. If you click on a packet, it will show you hex view
-6. You can save and load the captured packets in pcap format.
+6. You can save and load the captured packets in Pcap format.
 7. You can filter the captured packets based on the main columns of the table
 8. The program should be multithreaded with graphical user interface.
 # network-protocol-analyzer
