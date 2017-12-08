@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label prefHeight="17.0" prefWidth="117.0" text="Select capture :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="8.0" />
+               </VBox.margin>
+            </Label>
+            <TextField promptText="Enter a capture filter">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" text="Start">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Stop">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets top="4.0" />
+   </padding>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Captured packets filter :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="8.0" top="8.0" />
+               </VBox.margin>
+            </Label>
+            <TextField promptText="Applay a display filter">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Packets main details :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="8.0" />
+               </VBox.margin>
+            </Label>
+            <TableView prefHeight="151.0" prefWidth="700.0">
+              <columns>
+                <TableColumn prefWidth="55.0" text="No" />
+                <TableColumn prefWidth="77.0" text="Time" />
+                  <TableColumn prefWidth="87.0" text="Source" />
+                  <TableColumn prefWidth="81.0" text="Destination" />
+                  <TableColumn prefWidth="75.0" text="Protocol" />
+                  <TableColumn prefWidth="508.0" text="Info" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+            </TableView>
+            <ListView prefHeight="135.0" prefWidth="700.0">
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <ListView prefHeight="129.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+      </ListView>
+   </bottom>
+</BorderPane>
