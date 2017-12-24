@@ -5,13 +5,9 @@ package network_project;
  *
  * @author Mina Malak
  * @author Mina Abdelfady
-<<<<<<< HEAD
  * @author Mina Essam
  */
-=======
- */
 
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.PrintWriter;
@@ -45,24 +41,21 @@ public class P_Type {
             HexHelper hex=new HexHelper();
             AsciiHelper as=new AsciiHelper();
             BufferedReader bufferReader;
-<<<<<<< HEAD
             NewJFrame gui;
             
             boolean write_flag=true;
             public P_Type(NewJFrame sll){
                gui =sll;
 }
-=======
+
             
             boolean write_flag=true;
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
             
     public byte[] receivePacket(Packet packet) throws UnsupportedEncodingException {
       try { if (packet != null) {
           if (i==0)
           {writer=new PrintWriter("out.txt");  
           }
-<<<<<<< HEAD
            
           JTable tab=gui.ret_tab();
           DefaultTableModel model = (DefaultTableModel) tab.getModel();
@@ -92,9 +85,6 @@ public class P_Type {
                
              
            
-=======
-          
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
         writer.append(packet.toColoredString(true) + "\n");
         System.out.println(packet.toColoredString(true) + "\n");
         writer.append(AsciiHelper.toString(packet.getData()) + "\n");
@@ -150,7 +140,6 @@ System.out.println("************************************************************
                     System.out.println("tcp data in letters :" +AsciiHelper.toString(data));
                     writer.append("tcp time :" + tcpPkt.getTimeval());
                     System.out.println("tcp time :" + tcpPkt.getTimeval());
-<<<<<<< HEAD
                     if(("tcp".equals(filter.getText())) || ("  ".equals(filter.getText())))
                     {
                     model.addRow(new Object[]{i,tcpPkt.getTimeval() , srcIp,dstIp,proto,pktlen,AsciiHelper.toString(data)});
@@ -205,7 +194,6 @@ System.out.println("************************************************************
                     if((proto.equals(filter.getText())) || ("  ".equals(filter.getText())))
                     {
                 model.addRow(new Object[]{i,ippacket.getTimeval() , srcIp,dstIp,proto,pktlen,""});}
-=======
                     
                      //add row
                     
@@ -217,7 +205,6 @@ System.out.println("************************************************************
                     System.out.println(proto + "Packet");
                     
                      //add row
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
                 }
                 
                 String http="";
@@ -231,22 +218,17 @@ System.out.println("************************************************************
                         System.out.println("HTTPS");
                         http="https";
                     }
-                
-<<<<<<< HEAD
+
                  if(http.equals(filter.getText()))
                     {
                 model.addRow(new Object[]{i,ippacket.getTimeval() , srcIp,dstIp,http,pktlen,AsciiHelper.toString(data)});
                 }
                 
-                
-                
-                
 
 
-=======
                   //add row
                 
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
+
               writer.append("******************************************************");
                 System.out.println("******************************************************");
 
@@ -254,11 +236,6 @@ System.out.println("************************************************************
     
     
     
-<<<<<<< HEAD
-=======
-  
-   
->>>>>>> 55bbc13f366fb4e65edd2b9419a953b97f8e8803
     }}
             catch(Exception io)
             {
